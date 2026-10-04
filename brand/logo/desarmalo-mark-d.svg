@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Cuadrado "D" de Desarmalo — RECONSTRUIDO desde CSS, no es un archivo del repo.
+
+  En el código esta marca no existe como imagen: es un <span> con estilos en
+  apps/admin/src/app/pages/login/login.component.html:4-7 (.login__brand-dot) y
+  apps/admin/src/app/pages/login/login.component.scss:.login__brand-dot
+    ancho/alto 32px · fondo var(--ds-color-orange) = #ff4200
+    radio var(--ds-radius) = 6px (admin) · letra "D" · font-size 16px
+    font-family var(--ds-font-display) = Barlow Condensed, peso 800 (del padre .login__brand-mark)
+    color blanco (--ds-color-white) · centrada (display:flex; align/justify center)
+
+  La "D" es texto SVG: se ve bien sólo si Barlow Condensed 800 está disponible
+  (si no, cae a Arial Narrow/Arial). Para entregar a imprenta o a un tercero,
+  convertir el texto a trazos desde la fuente.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="128" height="128" role="img" aria-label="Desarmalo">
+  <rect width="32" height="32" rx="6" ry="6" fill="#ff4200"/>
+  <text x="16" y="16" text-anchor="middle" dominant-baseline="central"
+        font-family="'Barlow Condensed', 'Arial Narrow', Arial, sans-serif"
+        font-weight="800" font-size="16" fill="#ffffff">D</text>
+</svg>

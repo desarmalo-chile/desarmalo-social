@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Desarmalo — tokens de marca
+   --------------------------------------------------------------------------
+   Todos los valores están copiados tal cual del código. Nada inventado.
+   Fuente de cada bloque, en el comentario de su encabezado:
+
+     WEB    apps/web/src/styles/_tokens.scss      (sitio público, www.desarmalo.cl)
+     ADMIN  apps/admin/src/styles/_tokens.scss    (panel, admin.desarmalo.cl)
+
+   Los nombres (`--ds-*`) son los mismos del código, para que un snippet de
+   brand/ se pueda pegar en la app sin renombrar nada.
+
+   Sobre lo que NO existe en el código (y por eso no está acá): no hay degradado
+   ámbar, ni verde/rojo "de éxito/error" distintos de los de abajo, ni modo oscuro.
+   Ver README.md § "Lo que el kit pedido no encuentra en el código".
+   ========================================================================== */
+
+:root {
+  /* ---- Color de marca ---------------------------------------------------
+     WEB _tokens.scss:4-16 · ADMIN _tokens.scss:6-18 (idénticos en las dos apps) */
+  --ds-color-blue: #0155ab;                       /* enlaces, acción secundaria, "Desarmaduría" */
+  --ds-color-blue-hover: #01417f;
+  --ds-color-blue-tint: rgba(1, 85, 171, .1);     /* sólo en WEB */
+  --ds-color-orange: #ff4200;                     /* LA acción primaria, acentos, "Chocados en venta" */
+  --ds-color-orange-hover: #d63700;               /* hover… y fondo de CTAs con texto blanco (ver README) */
+  --ds-color-navy: #081828;                       /* header, footer, hero, tarjetas oscuras */
+  --ds-color-navy-2: #0f2236;                     /* bandas CTA oscuras, avatar del header */
+
+  /* ---- Fondos y texto ---------------------------------------------------
+     WEB _tokens.scss:11-16 · ADMIN _tokens.scss:13-18
+     "Fondo de página" = --ds-color-bg; "tarjeta" = --ds-color-white. */
+  --ds-color-bg: #f8f9fa;                         /* fondo de sección / página en el admin */
+  --ds-color-white: #fff;                         /* tarjetas, inputs */
+  --ds-color-text: #212529;
+  --ds-color-muted: #6c757d;
+  --ds-color-border: #dee2e6;
+  --ds-color-on-dark-muted: rgba(255, 255, 255, .72);   /* texto secundario sobre navy */
+
+  /* ---- Estado (éxito / error / advertencia) -----------------------------
+     WEB _tokens.scss:25-30 · ADMIN _tokens.scss:23-28 (idénticos).
+     Reservados para estados reales: no usarlos como color de CTA. */
+  --ds-color-success: #1e7d32;
+  --ds-color-success-bg: rgba(30, 125, 50, .12);
+  --ds-color-danger: #c62828;
+  --ds-color-danger-bg: rgba(198, 40, 40, .12);
+  --ds-color-warning: #b26a00;
+  --ds-color-warning-bg: rgba(178, 106, 0, .12);
+
+  /* ---- WhatsApp ----------------------------------------------------------
+     WEB _tokens.scss:20-21. El propio archivo aclara: "No es parte de la
+     paleta de Desarmalo". Sólo para el botón de contacto del detalle. */
+  --ds-color-whatsapp: #25d366;
+  --ds-color-whatsapp-hover: #1ebe5d;
+
+  /* ---- Tipografía --------------------------------------------------------
+     WEB _tokens.scss:33-41 · ADMIN _tokens.scss:30-33 */
+  --ds-font-display: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
+  --ds-font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', sans-serif;
+  --ds-fs-h1: clamp(54px, 8vw, 96px);             /* sólo WEB: el h1 del home */
+  --ds-fs-h2: clamp(34px, 4vw, 44px);             /* sólo WEB */
+  --ds-fs-h2-cta: clamp(38px, 5vw, 54px);         /* sólo WEB */
+  --ds-fs-card-title: 25px;                       /* sólo WEB */
+  --ds-fs-price: 26px;                            /* sólo WEB */
+  --ds-fs-eyebrow: 14px;
+  --ds-fs-nav: 17px;
+
+  /* ---- Espaciado ---------------------------------------------------------
+     WEB _tokens.scss:44-51 · ADMIN _tokens.scss:35-42 (idénticos) */
+  --ds-space-1: 4px;
+  --ds-space-2: 8px;
+  --ds-space-3: 12px;
+  --ds-space-4: 16px;
+  --ds-space-5: 24px;
+  --ds-space-6: 32px;
+  --ds-space-7: 48px;
+  --ds-space-8: 64px;
+
+  /* ---- Radios ------------------------------------------------------------
+     WEB _tokens.scss:52-53 (radio 2px). El admin usa 6px: ver bloque de abajo. */
+  --ds-radius: 2px;
+  --ds-radius-pill: 999px;
+
+  /* ---- Sombras -----------------------------------------------------------
+     WEB _tokens.scss:54-55 · ADMIN _tokens.scss:45-46 (idénticas).
+     Color base = navy (8, 24, 40), no negro. */
+  --ds-shadow-1: 0 1px 2px rgba(8, 24, 40, .08);       /* elevación sutil */
+  --ds-shadow-2: 0 8px 24px rgba(8, 24, 40, .12);      /* tarjeta destacada, modal, buscador del hero */
+
+  /* ---- Alturas de layout (WEB _tokens.scss:56-57) ----------------------- */
+  --ds-header-h: 72px;
+  --ds-header-h-mobile: 60px;
+}
+
+/* ==========================================================================
+   Panel de administración (apps/admin) — sólo lo que cambia respecto de WEB.
+   Uso: <html data-app="admin">. (El atributo es convención de este kit; en el
+   código el admin simplemente tiene su propio _tokens.scss.)
+   Diferencias reales, ADMIN _tokens.scss:
+     --ds-radius       6px   (línea 43)  ← web usa 2px
+     --ds-header-h     60px  (línea 47)  ← web usa 72px
+     --ds-sidebar-w    220px (línea 50)
+     --ds-bottom-nav-h 56px  (línea 51)
+   Y no define: blue-tint, whatsapp, ni los --ds-fs-h1/h2/h2-cta/card-title/price.
+   ========================================================================== */
+:root[data-app="admin"] {
+  --ds-radius: 6px;
+  --ds-header-h: 60px;
+  --ds-sidebar-w: 220px;
+  --ds-bottom-nav-h: 56px;
+}
+
+/* ==========================================================================
+   Valores que el código usa SUELTOS (sin token). Se listan acá para que el kit
+   los tenga; cada uno con el archivo de donde sale.
+   ========================================================================== */
+:root {
+  /* Overlay de hojas/menú lateral — apps/web/src/styles.scss:121 */
+  --brand-overlay: rgba(8, 24, 40, .55);
+  /* Píldora de "N fotos" sobre la imagen — apps/web/src/styles/_card.scss:79 */
+  --brand-pill-on-image: rgba(8, 24, 40, .72);
+  /* Línea divisoria sobre navy (footer) — apps/web/.../footer.component.scss:.ds-footer__bottom */
+  --brand-divider-on-navy: rgba(255, 255, 255, .15);
+  /* Chip activo del header sobre navy — apps/web/.../header.component.scss:.ds-header__link--active */
+  --brand-active-on-navy: rgba(255, 255, 255, .1);
+  /* Borde de tarjeta: 3px sólido; en hover pasa a naranja — apps/web/src/styles/_card.scss:19,25 */
+  --brand-card-border-w: 3px;
+  /* Transición de la tarjeta — apps/web/src/styles/_card.scss:21 */
+  --brand-card-transition: border-color .2s;
+  /* Altura mínima táctil de botones/inputs del admin — apps/admin/src/styles/_base.scss:.btn, .field__control */
+  --brand-touch-target: 44px;
+}
