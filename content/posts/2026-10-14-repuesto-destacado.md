@@ -4,7 +4,7 @@ red: [instagram, facebook]
 formato: post
 pilar: repuestos-destacados
 fecha: 2026-10-14
-estado: borrador
+estado: aprobado
 ---
 
 ## Copy
@@ -27,4 +27,4 @@ desarmalo.cl/publicaciones/desarmaduria/mazda-cx30-2-0-aut-en-desarme-133
 
 ## Notas
 
-- Falta el permiso del vendedor (Scl Desarmaduria) antes de aprobar.
+- Permiso del vendedor (Scl Desarmaduria) confirmado por Karina el 11 oct 2026.
