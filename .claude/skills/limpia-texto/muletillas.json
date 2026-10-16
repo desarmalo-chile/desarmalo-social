@@ -1,0 +1,509 @@
+{
+  "version": "1.0",
+  "nota": "Léxico de Desarmalo.cl. Adaptado de slop.json de instagram-agent-skill (MIT, (c) 2026 Jake Schincariol). Se edita a mano: si una palabra es de la marca y la limpieza la quita, sácala de aquí.",
+  "invisibles": [
+    {
+      "cp": "U+200B",
+      "nombre": "ESPACIO DE ANCHO CERO",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+200C",
+      "nombre": "NO UNIÓN DE ANCHO CERO",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+200D",
+      "nombre": "UNIÓN DE ANCHO CERO (fuera de emojis)",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+2060",
+      "nombre": "UNIÓN DE PALABRAS",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+FEFF",
+      "nombre": "BOM / ESPACIO DURO DE ANCHO CERO",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+00AD",
+      "nombre": "GUION SUAVE",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+180E",
+      "nombre": "SEPARADOR VOCÁLICO MONGOL",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+061C",
+      "nombre": "MARCA DE LETRA ÁRABE",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+200E",
+      "nombre": "MARCA IZQUIERDA A DERECHA",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+200F",
+      "nombre": "MARCA DERECHA A IZQUIERDA",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+E0000-U+E007F",
+      "nombre": "CARACTERES DE ETIQUETA (texto escondido)",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+2063",
+      "nombre": "SEPARADOR INVISIBLE",
+      "accion": "borrar"
+    },
+    {
+      "cp": "U+00A0",
+      "nombre": "ESPACIO DURO",
+      "accion": "espacio"
+    },
+    {
+      "cp": "U+202F",
+      "nombre": "ESPACIO DURO ANGOSTO",
+      "accion": "espacio"
+    },
+    {
+      "cp": "U+2009",
+      "nombre": "ESPACIO FINO",
+      "accion": "espacio"
+    },
+    {
+      "cp": "U+2007",
+      "nombre": "ESPACIO DE CIFRA",
+      "accion": "espacio"
+    },
+    {
+      "cp": "U+2003",
+      "nombre": "ESPACIO EME",
+      "accion": "espacio"
+    },
+    {
+      "cp": "U+2002",
+      "nombre": "ESPACIO ENE",
+      "accion": "espacio"
+    }
+  ],
+  "tipografia": [
+    {
+      "de": "—",
+      "nombre": "RAYA",
+      "a": ", "
+    },
+    {
+      "de": "–",
+      "nombre": "GUION MEDIO",
+      "a": "-"
+    },
+    {
+      "de": "“",
+      "nombre": "COMILLA DOBLE DE APERTURA",
+      "a": "\""
+    },
+    {
+      "de": "”",
+      "nombre": "COMILLA DOBLE DE CIERRE",
+      "a": "\""
+    },
+    {
+      "de": "‘",
+      "nombre": "COMILLA SIMPLE DE APERTURA",
+      "a": "'"
+    },
+    {
+      "de": "’",
+      "nombre": "COMILLA SIMPLE DE CIERRE",
+      "a": "'"
+    },
+    {
+      "de": "…",
+      "nombre": "PUNTOS SUSPENSIVOS",
+      "a": "..."
+    },
+    {
+      "de": "•",
+      "nombre": "VIÑETA",
+      "a": "-"
+    }
+  ],
+  "frases": [
+    {
+      "buscar": "en el mundo actual",
+      "cambiar": "hoy",
+      "familia": "aperturas"
+    },
+    {
+      "buscar": "en el mundo de hoy",
+      "cambiar": "hoy",
+      "familia": "aperturas"
+    },
+    {
+      "buscar": "en la era digital",
+      "cambiar": "hoy",
+      "familia": "aperturas"
+    },
+    {
+      "buscar": "en un mundo cada vez más",
+      "cambiar": "en un mundo más",
+      "familia": "aperturas"
+    },
+    {
+      "buscar": "en el vertiginoso mundo de",
+      "cambiar": "en",
+      "familia": "aperturas"
+    },
+    {
+      "buscar": "en el apasionante mundo de",
+      "cambiar": "en",
+      "familia": "aperturas"
+    },
+    {
+      "buscar": "¿alguna vez te has preguntado",
+      "cambiar": "¿te has preguntado",
+      "familia": "aperturas"
+    },
+    {
+      "buscar": "sumérgete en",
+      "cambiar": "entra a",
+      "familia": "aperturas"
+    },
+    {
+      "buscar": "descubre el poder de",
+      "cambiar": "usa",
+      "familia": "aperturas"
+    },
+    {
+      "buscar": "es importante destacar que",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "es importante mencionar que",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "cabe destacar que",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "cabe mencionar que",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "vale la pena mencionar que",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "sin lugar a dudas",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "sin duda alguna",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "en definitiva",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "en resumen",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "en conclusión",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "a fin de cuentas",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "dicho esto",
+      "cambiar": "",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "llevar al siguiente nivel",
+      "cambiar": "mejorar",
+      "familia": "promesas"
+    },
+    {
+      "buscar": "lleva tu auto al siguiente nivel",
+      "cambiar": "mejora tu auto",
+      "familia": "promesas"
+    },
+    {
+      "buscar": "al siguiente nivel",
+      "cambiar": "",
+      "familia": "promesas"
+    },
+    {
+      "buscar": "cambia las reglas del juego",
+      "cambiar": "cambia las cosas",
+      "familia": "promesas"
+    },
+    {
+      "buscar": "un antes y un después",
+      "cambiar": "un cambio",
+      "familia": "promesas"
+    },
+    {
+      "buscar": "de manera eficiente",
+      "cambiar": "rápido",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "de forma rápida y sencilla",
+      "cambiar": "rápido",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "de manera rápida y sencilla",
+      "cambiar": "rápido",
+      "familia": "relleno"
+    },
+    {
+      "buscar": "la tranquilidad que mereces",
+      "cambiar": "tranquilidad",
+      "familia": "promesas"
+    },
+    {
+      "buscar": "todo lo que necesitas saber",
+      "cambiar": "lo clave",
+      "familia": "promesas"
+    },
+    {
+      "buscar": "no busques más",
+      "cambiar": "",
+      "familia": "promesas"
+    },
+    {
+      "buscar": "deja de hacer scroll",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "para de hacer scroll",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "no hagas scroll",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "en el video de hoy",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "en el post de hoy",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "en este video te voy a",
+      "cambiar": "aquí te vamos a",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "síguenos para más",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "sígueme para más",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "dale like si",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "dale like",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "etiqueta a alguien que necesite esto",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "etiqueta a ese amigo que",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "el algoritmo ama",
+      "cambiar": "",
+      "familia": "instagram"
+    },
+    {
+      "buscar": "link en la bio 👆",
+      "cambiar": "link en la bio",
+      "familia": "instagram"
+    }
+  ],
+  "palabras": [
+    {
+      "buscar": "potenciar",
+      "cambiar": "mejorar",
+      "familia": "verbos"
+    },
+    {
+      "buscar": "optimizar",
+      "cambiar": "mejorar",
+      "familia": "verbos"
+    },
+    {
+      "buscar": "desbloquea",
+      "cambiar": "consigue",
+      "familia": "verbos"
+    },
+    {
+      "buscar": "fomentar",
+      "cambiar": "impulsar",
+      "familia": "verbos"
+    },
+    {
+      "buscar": "revolucionario",
+      "cambiar": "nuevo",
+      "familia": "adjetivos"
+    },
+    {
+      "buscar": "revolucionaria",
+      "cambiar": "nueva",
+      "familia": "adjetivos"
+    },
+    {
+      "buscar": "innovador",
+      "cambiar": "nuevo",
+      "familia": "adjetivos"
+    },
+    {
+      "buscar": "innovadora",
+      "cambiar": "nueva",
+      "familia": "adjetivos"
+    },
+    {
+      "buscar": "crucial",
+      "cambiar": "clave",
+      "familia": "adjetivos"
+    },
+    {
+      "buscar": "fundamental",
+      "cambiar": "clave",
+      "familia": "adjetivos"
+    },
+    {
+      "buscar": "robusto",
+      "cambiar": "firme",
+      "familia": "adjetivos"
+    },
+    {
+      "buscar": "imprescindible",
+      "cambiar": "necesario",
+      "familia": "adjetivos"
+    },
+    {
+      "buscar": "definitivamente",
+      "cambiar": "",
+      "familia": "adverbios"
+    },
+    {
+      "buscar": "literalmente",
+      "cambiar": "",
+      "familia": "adverbios"
+    },
+    {
+      "buscar": "absolutamente",
+      "cambiar": "",
+      "familia": "adverbios"
+    },
+    {
+      "buscar": "sinergia",
+      "cambiar": "trabajo en conjunto",
+      "familia": "jerga"
+    },
+    {
+      "buscar": "experiencia de usuario",
+      "cambiar": "experiencia",
+      "familia": "jerga"
+    }
+  ],
+  "estructuras": [
+    {
+      "regex": "(?i)\\bno es (?:solo|sólo|solamente) [^.!?\\n]{2,60}[,.] es\\b",
+      "nombre": "\"No es solo X, es Y\"",
+      "arreglo": "Di lo único que quieres decir. Borra la primera mitad."
+    },
+    {
+      "regex": "(?i)\\bno (?:solo|sólo|solamente)\\b[^.!?\\n]{2,80}\\bsino (?:también|que)\\b",
+      "nombre": "\"No solo X sino también Y\"",
+      "arreglo": "Sepáralo en dos frases o quédate con la más fuerte."
+    },
+    {
+      "regex": "(?i)\\bno se trata de [^.!?\\n]{2,60}[.,] se trata de\\b",
+      "nombre": "\"No se trata de X, se trata de Y\"",
+      "arreglo": "Parte con Y. El giro es lo que delata."
+    },
+    {
+      "regex": "(?i)\\b(?:imagina|imagínate) (?:un mundo|poder)\\b",
+      "nombre": "\"Imagina un mundo...\"",
+      "arreglo": "Parte con el hecho concreto, no con el imagina."
+    },
+    {
+      "regex": "(?i)^\\s*(?:hola|holi|hey)[ ,!]",
+      "nombre": "Saludo de apertura",
+      "arreglo": "Nadie llega al feed a que lo saluden. Parte con el gancho."
+    },
+    {
+      "regex": "(?:\\b[A-ZÁÉÍÓÚÑ]{3,}\\b[ !,]+){3,}",
+      "nombre": "Tres palabras gritadas seguidas",
+      "arreglo": "Deja una en mayúscula, máximo."
+    },
+    {
+      "regex": "(?m)^\\s*[\\U0001F300-\\U0001FAFF\\u2600-\\u27BF]\\s*\\S.*\\n\\s*[\\U0001F300-\\U0001FAFF\\u2600-\\u27BF]\\s*\\S.*\\n\\s*[\\U0001F300-\\U0001FAFF\\u2600-\\u27BF]\\s*\\S",
+      "nombre": "Lista con emojis como viñetas (3 o más)",
+      "arreglo": "Con dos se lee bien. Tres o más parece plantilla."
+    },
+    {
+      "regex": "(?:#\\w+\\s*){6,}",
+      "nombre": "Muro de hashtags",
+      "arreglo": "Máximo 5, específicos, al final."
+    },
+    {
+      "regex": "(?i)\\b(?:el mejor|la mejor|los mejores|las mejores|n[°º]\\s?1|número uno)\\b",
+      "nombre": "Superlativo sin respaldo",
+      "arreglo": "Guía de marca: sin promesas que no podamos cumplir. Respáldalo con un dato o quítalo."
+    },
+    {
+      "regex": "(?i)\\b(?:incre[ií]ble|fascinante|transformador[a]?|inigualable|espectacular|alucinante)\\b",
+      "nombre": "Adjetivo inflado",
+      "arreglo": "Cámbialo por el dato que lo justifica (precio, año, ciudad) o bórralo."
+    }
+  ]
+}
