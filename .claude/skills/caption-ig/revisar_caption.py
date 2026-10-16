@@ -57,8 +57,7 @@ LLAMADOS = [
 
 RELLENO = {"#viral", "#fyp", "#explore", "#explorepage", "#foryou", "#foryoupage",
            "#parati", "#trending", "#tendencia", "#instagood", "#love", "#follow",
-           "#like4like", "#reels", "#reelsinstagram", "#viralreels", "#instadaily",
-           "#chile"}
+           "#like4like", "#reels", "#reelsinstagram", "#viralreels", "#instadaily"}
 
 # Voseo: la marca tutea ("busca", no "buscá"). Lista corta de formas comunes.
 VOSEO_RE = re.compile(
