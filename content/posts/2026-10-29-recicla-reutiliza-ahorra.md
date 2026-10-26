@@ -27,6 +27,10 @@ Imagen única 1080×1350.
 - Mitad inferior en navy `#081828`: tres palabras apiladas en Barlow Condensed 800 en mayúsculas, "RECICLA · REUTILIZA · AHORRA", la última en naranja `#ff4200`.
 - Logo PNG abajo a la izquierda y filete naranja de 4 px entre la foto y el bloque navy.
 
+## Láminas
+
+`post.png`, 1080×1350, en `/mnt/project-files/posts/2026-10-29-recicla-reutiliza-ahorra/` y en `assets/2026-10/semana-4/2026-10-29.png`. Capturas del sitio sacadas el 26 de octubre de 2026 (`/mnt/project-files/capturas-sitio/2026-10-26/`).
+
 ## Notas
 
 - "Recicla, reutiliza y ahorra" es la frase del footer del sitio (`brand/textos.md`).

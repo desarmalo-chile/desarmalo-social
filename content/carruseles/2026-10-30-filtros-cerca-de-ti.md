@@ -30,6 +30,10 @@ Seis láminas 1080×1350, fondo navy `#081828`.
 5. "Compra en persona y revisa la pieza antes de pagar", con el aviso de seguridad del sitio firmado "Equipo Desarmalo.cl".
 6. Cierre: "Busca tu pieza en desarmalo.cl", logo PNG sobre navy y filete naranja de 4 px.
 
+## Láminas
+
+6 láminas `lamina-1.png` a `lamina-6.png`, 1080×1350, en `/mnt/project-files/carruseles/2026-10-30-filtros-cerca-de-ti/` y en `assets/2026-10/semana-4/2026-10-30-lamina-N.png`. Capturas del sitio sacadas el 26 de octubre de 2026 (`/mnt/project-files/capturas-sitio/2026-10-26/`).
+
 ## Notas
 
 - Nombres de los filtros copiados de `brand/textos.md` § Buscar y explorar.
