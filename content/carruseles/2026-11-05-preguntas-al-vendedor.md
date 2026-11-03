@@ -4,7 +4,7 @@ red: [instagram, facebook]
 formato: carrusel
 pilar: tips-y-compra-segura
 fecha: 2026-11-05
-estado: revision
+estado: reemplazado
 ---
 
 ## Caption
@@ -33,3 +33,5 @@ Cinco láminas 1080×1350, navy y claro alternados, Barlow Condensed 800.
 
 - El aviso de seguridad es el texto del sitio (`brand/textos.md` § Mensajes del sistema).
 - Las burbujas son ejemplos, no conversaciones reales.
+
+- 3 nov 2026: Karina aprobó publicar esta pieza como reel con música (`content/reels/2026-11-05-preguntas-al-vendedor-musica.md`); el carrusel no se programa para no repetir el tema.

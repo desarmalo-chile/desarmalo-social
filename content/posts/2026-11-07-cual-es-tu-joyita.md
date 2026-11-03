@@ -4,7 +4,7 @@ red: [instagram, facebook]
 formato: post
 pilar: comunidad
 fecha: 2026-11-07
-estado: revision
+estado: aprobado
 ---
 
 ## Caption

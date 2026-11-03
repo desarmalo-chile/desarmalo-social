@@ -4,7 +4,7 @@ red: [instagram, facebook]
 formato: historia
 pilar: comunidad
 fecha: 2026-11-03
-estado: revision
+estado: aprobado
 ---
 
 ## Historias
