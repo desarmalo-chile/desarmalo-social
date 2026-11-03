@@ -4,7 +4,7 @@ red: [instagram, facebook]
 formato: reel
 pilar: tips-y-compra-segura
 fecha: 2026-11-05
-estado: revision
+estado: aprobado
 ---
 
 ## Qué es
@@ -29,5 +29,5 @@ Guarda este reel para tu próxima visita a una desarmaduría.
 ## Publicación propuesta
 
 - Jueves 5 de noviembre, 10:00 (hora de Santiago), Instagram Reel + Facebook Reel, desde Metricool.
-- Música: pendiente de que Karina elija.
+- Música: urbana con ritmo (elegida por Karina el 3 nov), de la biblioteca de audio de Instagram.
 - Se programa solo cuando Karina lo apruebe (`estado: aprobado`).
