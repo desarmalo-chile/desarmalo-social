@@ -4,7 +4,7 @@ red: [instagram, facebook]
 formato: post
 pilar: repuestos-destacados
 fecha: 2026-11-18
-estado: revision
+estado: aprobado
 ---
 
 ## Caption
